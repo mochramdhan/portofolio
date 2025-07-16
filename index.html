@@ -563,10 +563,10 @@ Melalui program Merdeka Belajar Kampus Merdeka (MBKM), saya memperdalam keteramp
 </section>
 
         </article>
+<!--
+  - #PORTFOLIO
+-->
 
-        <!--
-        - #PORTFOLIO
-      -->
 <article class="portfolio" data-page="project">
   <header>
     <h2 class="h2 article-title">Project</h2>
@@ -575,168 +575,235 @@ Melalui program Merdeka Belajar Kampus Merdeka (MBKM), saya memperdalam keteramp
   <section class="projects">
     <!-- Filter Menu -->
     <ul class="filter-list">
-      <li class="filter-item"><button data-filter-btn>all</button></li>
-      <li class="filter-item"><button data-filter-btn>ai-ml</button></li>
-      <li class="filter-item"><button data-filter-btn>web-development</button></li>
-      <li class="filter-item"><button data-filter-btn>mobile-programming</button></li>
-      <li class="filter-item"><button data-filter-btn>iot-embedded</button></li>
-      <li class="filter-item"><button data-filter-btn>desktop-programming</button></li>
+      <li class="filter-item">
+        <button class="active" data-filter-btn>All</button>
+      </li>
+      <li class="filter-item">
+        <button data-filter-btn>Mobile Programming</button>
+      </li>
+      <li class="filter-item">
+        <button data-filter-btn>Web Development</button>
+      </li>
     </ul>
 
-    <!-- Filter Select Box -->
+    <!-- Filter Select Box (Responsive Filter) -->
     <div class="filter-select-box">
       <button class="filter-select" data-select>
-        <div class="select-value" data-selecct-value>Select</div>
-        <div class="select-icon"><ion-icon name="chevron-down"></ion-icon></div>
+        <div class="select-value" data-selecct-value>All</div>
+        <div class="select-icon">
+          <ion-icon name="chevron-down"></ion-icon>
+        </div>
       </button>
       <ul class="select-list">
-        <li class="select-item"><button data-select-item>all</button></li>
-        <li class="select-item"><button data-select-item>ai-ml</button></li>
-        <li class="select-item"><button data-select-item>web-development</button></li>
-        <li class="select-item"><button data-select-item>mobile-programming</button></li>
-        <li class="select-item"><button data-select-item>iot-embedded</button></li>
-        <li class="select-item"><button data-select-item>desktop-programming</button></li>
+        <li class="select-item"><button data-select-item>All</button></li>
+        <li class="select-item"><button data-select-item>Mobile Programming</button></li>
+        <li class="select-item"><button data-select-item>Web Development</button></li>
       </ul>
     </div>
 
-   <!-- Project List -->
-<ul class="project-list">
+    <!-- Project List -->
+    <ul class="project-list">
+      <!-- Web Development Projects -->
+      <li class="project-item" data-filter-item data-category="web development">
+        <a href="#" data-modal-target="#mushboxWebModal">
+          <figure class="project-img">
+            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+            <img src="assets/web/mb/mb (6).png" alt="MushBox Web" loading="lazy">
+          </figure>
+          <h3 class="project-title">MushBox - Monitoring Jamur (Web)</h3>
+          <p class="project-category">Web Development</p>
+        </a>
+      </li>
 
-  <!-- AI/ML -->
-  <li class="project-item" data-filter-item data-category="ai-ml">
-    <a href="#"><figure class="project-img"><img src="https://placehold.co/400x250?text=Temporary%20Unavailable" alt="Klasifikasi Traffic Sign"></figure>
-      <h3 class="project-title">Klasifikasi Traffic Sign</h3><p class="project-category">AI/ML</p></a>
-  </li>
-  <li class="project-item" data-filter-item data-category="ai-ml">
-    <a href="#"><figure class="project-img"><img src="https://placehold.co/400x250?text=Temporary%20Unavailable" alt="Klasifikasi ASL"></figure>
-      <h3 class="project-title">Klasifikasi Bahasa Isyarat ASL</h3><p class="project-category">AI/ML</p></a>
-  </li>
-  <li class="project-item" data-filter-item data-category="ai-ml">
-    <a href="#"><figure class="project-img"><img src="https://placehold.co/400x250?text=Temporary%20Unavailable" alt="Deteksi Retakan Beton"></figure>
-      <h3 class="project-title">Deteksi Retakan Beton</h3><p class="project-category">AI/ML</p></a>
-  </li>
+      <li class="project-item" data-filter-item data-category="web development">
+        <a href="#" data-modal-target="#rumahKreatifModal">
+          <figure class="project-img">
+            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+            <img src="assets/web/rumahkreatif/rk (9).png" alt="Rumah Kreatif" loading="lazy">
+          </figure>
+          <h3 class="project-title">Rumah Kreatif - Kursus Konten Kreator</h3>
+          <p class="project-category">Web Development</p>
+        </a>
+      </li>
 
-  <!-- Web Development -->
-  <li class="project-item" data-filter-item data-category="web-development">
-    <a href="#"><figure class="project-img"><img src="https://placehold.co/400x250?text=Temporary%20Unavailable" alt="Mushbox"></figure>
-      <h3 class="project-title">Mushbox Web Monitoring IoT</h3><p class="project-category">Web Development</p></a>
-  </li>
-  <li class="project-item" data-filter-item data-category="web-development">
-    <a href="#"><figure class="project-img"><img src="https://placehold.co/400x250?text=Temporary%20Unavailable" alt="Web Kasir"></figure>
-      <h3 class="project-title">Web Kasir (PHP Native)</h3><p class="project-category">Web Development</p></a>
-  </li>
-  <li class="project-item" data-filter-item data-category="web-development">
-    <a href="#"><figure class="project-img"><img src="https://placehold.co/400x250?text=Temporary%20Unavailable" alt="Course Laravel"></figure>
-      <h3 class="project-title">Web Course (Laravel 11)</h3><p class="project-category">Web Development</p></a>
-  </li>
-  <li class="project-item" data-filter-item data-category="web-development">
-    <a href="#"><figure class="project-img"><img src="https://placehold.co/400x250?text=Temporary%20Unavailable" alt="Chat Realtime"></figure>
-      <h3 class="project-title">Realtime Chat (Node.js)</h3><p class="project-category">Web Development</p></a>
-  </li>
-  <li class="project-item" data-filter-item data-category="web-development">
-    <a href="#"><figure class="project-img"><img src="https://placehold.co/400x250?text=Temporary%20Unavailable" alt="Foto Studio Otomatis"></figure>
-      <h3 class="project-title">Foto Studio Otomatis</h3><p class="project-category">Web Development</p></a>
-  </li>
+      <li class="project-item" data-filter-item data-category="web development">
+        <a href="#" data-modal-target="#fotoStudioModal">
+          <figure class="project-img">
+            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+            <img src="assets/web/fotostudio/1 (1).jpg" alt="Foto Studio Otomatis" loading="lazy">
+          </figure>
+          <h3 class="project-title">Foto Studio Otomatis IoT</h3>
+          <p class="project-category">Web Development</p>
+        </a>
+      </li>
 
-  <!-- Mobile Programming -->
-  <li class="project-item" data-filter-item data-category="mobile-programming">
-    <a href="#"><figure class="project-img"><img src="https://placehold.co/400x250?text=Temporary%20Unavailable" alt="Queue Unity"></figure>
-      <h3 class="project-title">Media Belajar Queue (Unity)</h3><p class="project-category">Mobile Programming</p></a>
-  </li>
-  <li class="project-item" data-filter-item data-category="mobile-programming">
-    <a href="#"><figure class="project-img"><img src="https://placehold.co/400x250?text=Temporary%20Unavailable" alt="Audio Player Flutter"></figure>
-      <h3 class="project-title">Audio Player (Flutter)</h3><p class="project-category">Mobile Programming</p></a>
-  </li>
-  <li class="project-item" data-filter-item data-category="mobile-programming">
-    <a href="#"><figure class="project-img"><img src="https://placehold.co/400x250?text=Temporary%20Unavailable" alt="Game Penjumlahan"></figure>
-      <h3 class="project-title">Game Penjumlahan (Scratch)</h3><p class="project-category">Mobile Programming</p></a>
-  </li>
+      <li class="project-item" data-filter-item data-category="web development">
+        <a href="#" data-modal-target="#nodigiModal">
+          <figure class="project-img">
+            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+            <img src="assets/web/nodigi/4.png" alt="Nodigi Web Kasir" loading="lazy">
+          </figure>
+          <h3 class="project-title">Nodigi - Web Kasir</h3>
+          <p class="project-category">Web Development</p>
+        </a>
+      </li>
 
-  <!-- IoT & Embedded -->
-  <li class="project-item" data-filter-item data-category="iot-embedded">
-    <a href="#"><figure class="project-img"><img src="https://placehold.co/400x250?text=Temporary%20Unavailable" alt="Foto Studio ESP32"></figure>
-      <h3 class="project-title">Foto Studio Otomatis (ESP32 + Web)</h3><p class="project-category">IoT & Embedded</p></a>
-  </li>
-  <li class="project-item" data-filter-item data-category="iot-embedded">
-    <a href="#"><figure class="project-img"><img src="https://placehold.co/400x250?text=Temporary%20Unavailable" alt="Fish Feeder"></figure>
-      <h3 class="project-title">IoT Fish Feeder (ESP32 + Telegram)</h3><p class="project-category">IoT & Embedded</p></a>
-  </li>
-  <li class="project-item" data-filter-item data-category="iot-embedded">
-    <a href="#"><figure class="project-img"><img src="https://placehold.co/400x250?text=Temporary%20Unavailable" alt="FM Transmitter"></figure>
-      <h3 class="project-title">FM Transmitter DIY</h3><p class="project-category">IoT & Embedded</p></a>
-  </li>
-  <li class="project-item" data-filter-item data-category="iot-embedded">
-    <a href="#"><figure class="project-img"><img src="https://placehold.co/400x250?text=Temporary%20Unavailable" alt="Linear Servo"></figure>
-      <h3 class="project-title">Linear Servo + Encoder</h3><p class="project-category">IoT & Embedded</p></a>
-  </li>
-  <li class="project-item" data-filter-item data-category="iot-embedded">
-    <a href="#"><figure class="project-img"><img src="https://placehold.co/400x250?text=Temporary%20Unavailable" alt="Flip Flop"></figure>
-      <h3 class="project-title">Rangkaian PCB Flip-Flop</h3><p class="project-category">IoT & Embedded</p></a>
-  </li>
 
-  <!-- Desktop Programming -->
-  <li class="project-item" data-filter-item data-category="desktop-programming">
-    <a href="#"><figure class="project-img"><img src="https://placehold.co/400x250?text=Temporary%20Unavailable" alt="Sorting Tree JS"></figure>
-      <h3 class="project-title">Sorting & Tree (JavaScript)</h3><p class="project-category">Desktop Programming</p></a>
-  </li>
-  <li class="project-item" data-filter-item data-category="desktop-programming">
-    <a href="#"><figure class="project-img"><img src="https://placehold.co/400x250?text=Temporary%20Unavailable" alt="Kalkulator C++"></figure>
-      <h3 class="project-title">Kalkulator Kalkulus (C++)</h3><p class="project-category">Desktop Programming</p></a>
-  </li>
-  <li class="project-item" data-filter-item data-category="desktop-programming">
-    <a href="#"><figure class="project-img"><img src="https://placehold.co/400x250?text=Temporary%20Unavailable" alt="Huffman"></figure>
-      <h3 class="project-title">Kompresi Huffman (C++)</h3><p class="project-category">Desktop Programming</p></a>
-  </li>
-  <li class="project-item" data-filter-item data-category="desktop-programming">
-    <a href="#"><figure class="project-img"><img src="https://placehold.co/400x250?text=Temporary%20Unavailable" alt="Cek Baca C++"></figure>
-      <h3 class="project-title">Cek Kecepatan Membaca (C++)</h3><p class="project-category">Desktop Programming</p></a>
-  </li>
+      <!-- Mobile Programming Projects -->
+      <li class="project-item" data-filter-item data-category="mobile programming">
+        <a href="#" data-modal-target="#mushboxMobileModal">
+          <figure class="project-img">
+            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+            <img src="assets/app/mushbox/cover.jpg" alt="MushBox Mobile" loading="lazy">
+          </figure>
+          <h3 class="project-title">MushBox - Monitoring Jamur (Mobile)</h3>
+          <p class="project-category">Mobile Programming</p>
+        </a>
+      </li>
 
-</ul>
-
+      <li class="project-item" data-filter-item data-category="mobile programming">
+        <a href="#" data-modal-target="#cryptoSteganoModal">
+          <figure class="project-img">
+            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+            <img src="assets/app/jarkom/cover.jpg" alt="Cryptography Steganography Tool" loading="lazy">
+          </figure>
+          <h3 class="project-title">Cryptography & Steganography Tools</h3>
+          <p class="project-category">Mobile Programming</p>
+        </a>
+      </li>
+    </ul>
   </section>
 </article>
 
+<!-- Modals -->
+<!--
+  - #PORTFOLIO
+-->
 
-        <div class="portfolio-modal" id="portfolioModal">
-          <div class="modal-content">
-            <span class="close-modal">×</span>
-            <div class="modal-body">
-              <h3 id="modal-title"></h3>
-              <div class="modal-image-container">
-                <img id="modal-image" src="https://mfajarjati.github.io/portofolio/" alt="Project Screenshot">
-              </div>
-              <div class="project-details">
-                <h4>Project Description</h4>
-                <p id="modal-description"></p>
+<article class="portfolio" data-page="project">
+  <!-- ... sebelumnya tidak berubah ... -->
+</article>
 
-                <h4>My Role</h4>
-                <p id="modal-role"></p>
+<!-- Modals with Gallery -->
+<div id="mushboxWebModal" class="modal">
+  <div class="modal-content">
+    <span class="close-button">&times;</span>
+    <h2>MushBox - Monitoring Jamur (Web)</h2>
+    <p>URL: <a href="https://api.musbox.sirem.web.id/" target="_blank">api.musbox.sirem.web.id</a></p>
+    <p>Preview: <a href="https://drive.google.com/drive/folders/1DWjlIHmHMdFTOa00RLxoJ4pCcyAmUVS-" target="_blank">Drive Link</a></p>
+  
+    <div class="modal-gallery">
+       <p><b>MushBox </b>adalah sistem monitoring dan pengendalian kelembaban untuk budidaya jamur yang dikembangkan dalam dua platform, web dan mobile yang diintegrasikan melalui API. Versi web dibuat menggunakan PHP Native dan digunakan untuk memantau data sensor secara real-time, sedangkan versi mobile menggunakan Bahasa kotlin dengan framework Flutter, memungkinkan pemilik budidaya mengakses data dari perangkat Android. Fitur utama termasuk grafik monitoring, dan integrasi IoT dengan mikrokontroler serta sensor DHT11/22. Sistem ini mendukung otomatisasi kontrol kelembaban melalui algoritma PID.</p>
+     
+      <img src="assets/web/mb/mb (1).png" alt="MushBox Web Screenshot 1">
+      <img src="assets/web/mb/mb (2).png" alt="MushBox Web Screenshot 2">
+      <img src="assets/web/mb/mb (3).png" alt="MushBox Web Screenshot 3">
+      <img src="assets/web/mb/mb (4).png" alt="MushBox Web Screenshot 4">
+      <img src="assets/web/mb/mb (5).png" alt="MushBox Web Screenshot 5">
+      <img src="assets/web/mb/mb (6).png" alt="MushBox Web Screenshot 6">
+      
+    </div>
+    </div>
+</div>
 
-                <h4>Key Features</h4>
-                <ul id="modal-highlights"></ul>
+<div id="rumahKreatifModal" class="modal">
+  <div class="modal-content">
+    <span class="close-button">&times;</span>
+    <h2>Rumah Kreatif</h2>
+    <div class="modal-gallery">
+      
+         <p>URL: <a href="https://rumahkreatif.sirem.web.id/" target="_blank">rumahkreatif.sirem.web.id</a></p>
+    <p>Preview: <a href="https://drive.google.com/drive/folders/1iAKibW-80MLhnGTMqqLXN1vga7fQKWbJ" target="_blank">Drive Link</a></p>
+  <p>Rumah Kreatif adalah platform kursus online untuk konten kreator yang dibangun menggunakan framework Laravel. Proyek ini memiliki tiga peran pengguna utama: admin, pengajar, dan peserta. Fitur-fiturnya mencakup manajemen kelas, video pembelajaran, dashboard pengguna, sistem login dan register. Struktur berbasis MVC Laravel membuat aplikasi ini mudah dikembangkan dan dikelola.</p>
+      <img src="assets/web/rumahkreatif/rk (1).png" alt="Rumah Kreatif Screenshot 1">
+      <img src="assets/web/rumahkreatif/rk (2).png" alt="Rumah Kreatif Screenshot 2">
+      <img src="assets/web/rumahkreatif/rk (3).png" alt="Rumah Kreatif Screenshot 3">
+      <img src="assets/web/rumahkreatif/rk (4).png" alt="Rumah Kreatif Screenshot 4">
+      <img src="assets/web/rumahkreatif/rk (5).png" alt="Rumah Kreatif Screenshot 5">
+      <img src="assets/web/rumahkreatif/rk (6).png" alt="Rumah Kreatif Screenshot 6">
+      <img src="assets/web/rumahkreatif/rk (7).png" alt="Rumah Kreatif Screenshot 7">
+      <img src="assets/web/rumahkreatif/rk (8).png" alt="Rumah Kreatif Screenshot 8">
+      <img src="assets/web/rumahkreatif/rk (9).png" alt="Rumah Kreatif Screenshot 9">
+    </div>
+ </div>
+</div>
 
-                <h4>Technical Challenges &amp; Solutions</h4>
-                <ul id="modal-challenges"></ul>
+<div id="fotoStudioModal" class="modal">
+  <div class="modal-content">
+    <span class="close-button">&times;</span>
+    <h2>Foto Studio Otomatis IoT</h2>
+    <div class="modal-gallery">
+       <p>Preview: <a href="https://drive.google.com/drive/folders/1SaGrwHMzgO-YnBDfLhH5wDnOH29FFKrD" target="_blank">Drive Link</a></p>
+  
+      <p>Foto Studio Otomatis merupakan sistem berbasis web dan IoT untuk pengambilan foto studio secara otomatis. Dibangun dengan CodeIgniter, sistem ini terintegrasi dengan mikrokontroler dan kamera, memungkinkan pengguna mengambil gambar dengan timer dan kontrol pencahayaan otomatis. Fitur utamanya adalah kontrol via web, pratinjau hasil foto, serta penyimpanan otomatis ke server lokal atau cloud.</p>
+      <img src="assets/web/fotostudio/1 (1).jpg" alt="Foto Studio Screenshot 1">
+      <img src="assets/web/fotostudio/1 (2).jpg" alt="Foto Studio Screenshot 2">
+      <img src="assets/web/fotostudio/1 (3).jpg" alt="Foto Studio Screenshot 3">
+      <img src="assets/web/fotostudio/1 (4).jpg" alt="Foto Studio Screenshot 4">
+      <img src="assets/web/fotostudio/1 (5).jpg" alt="Foto Studio Screenshot 5">
+      <img src="assets/web/fotostudio/1 (6).jpg" alt="Foto Studio Screenshot 6">
+      <img src="assets/web/fotostudio/1 (7).jpg" alt="Foto Studio Screenshot 7">
+      <img src="assets/web/fotostudio/1 (8).jpg" alt="Foto Studio Screenshot 8">
+    </div>
+   </div>
+</div>
 
-                <h4>Impact &amp; Outcomes</h4>
-                <ul id="modal-outcomes"></ul>
+<div id="nodigiModal" class="modal">
+  <div class="modal-content">
+    <span class="close-button">&times;</span>
+    <h2>Nodigi - Web Kasir</h2>
+    <div class="modal-gallery">
+      
+        <p>URL: <a href="https://nodigiapp.000webhostapp.com/" target="_blank">nodigiapp.000webhostapp.com</a></p>
+    <p>Preview: <a href="https://drive.google.com/drive/folders/1kNl9nErV31O2ouClwWHwmUUapc-YlEk2" target="_blank">Drive Link</a></p>
+  <p>Nodigi adalah aplikasi kasir berbasis web yang dikembangkan menggunakan PHP Native dan JavaScript. Aplikasi ini mendukung pengelolaan produk, transaksi penjualan, pencetakan struk, serta laporan penjualan harian dan bulanan. Fitur tambahan meliputi user login, CRUD data barang, dan antarmuka yang simpel dan responsif.</p>
+      <img src="assets/web/nodigi/2.png" alt="Nodigi Screenshot 1">
+      <img src="assets/web/nodigi/3.png" alt="Nodigi Screenshot 2">
+      <img src="assets/web/nodigi/4.png" alt="Nodigi Screenshot 3">
+      <img src="assets/web/nodigi/5.png" alt="Nodigi Screenshot 4">
+      <img src="assets/web/nodigi/6.png" alt="Nodigi Screenshot 5">
+      <img src="assets/web/nodigi/7.png" alt="Nodigi Screenshot 6">
+      <img src="assets/web/nodigi/8.png" alt="Nodigi Screenshot 7">
+      <img src="assets/web/nodigi/9.png" alt="Nodigi Screenshot 8">
+      <img src="assets/web/nodigi/10.png" alt="Nodigi Screenshot 9">
+    </div>
+  </div>
+</div>
 
-                <h4>Technologies Used</h4>
-                <ul id="modal-tech"></ul>
+<div id="mushboxMobileModal" class="modal">
+  <div class="modal-content">
+    <span class="close-button">&times;</span>
+    <h2>MushBox - Monitoring Jamur (Mobile)</h2>
+    <div class="modal-gallery">
+        <p>preview & apk: <a href="https://drive.google.com/drive/folders/1gYVC2C3To4BP1IIT1XaA571bbl1P00ZP" target="_blank">Drive Link</a></p>
+ 
+      <p><b>MushBox </b>adalah sistem monitoring dan pengendalian kelembaban untuk budidaya jamur yang dikembangkan dalam dua platform, web dan mobile yang diintegrasikan melalui API. Versi web dibuat menggunakan PHP Native dan digunakan untuk memantau data sensor secara real-time, sedangkan versi mobile menggunakan Bahasa kotlin dengan framework Flutter, memungkinkan pemilik budidaya mengakses data dari perangkat Android. Fitur utama termasuk grafik monitoring, dan integrasi IoT dengan mikrokontroler serta sensor DHT11/22. Sistem ini mendukung otomatisasi kontrol kelembaban melalui algoritma PID.</p>
+      <img src="assets/app/mushbox/mb (1).jpg" alt="MushBox Mobile Screenshot 1">
+      <img src="assets/app/mushbox/mb (2).jpg" alt="MushBox Mobile Screenshot 2">
+      <img src="assets/app/mushbox/mb (3).jpg" alt="MushBox Mobile Screenshot 3">
+      <img src="assets/app/mushbox/mb (4).jpg" alt="MushBox Mobile Screenshot 4">
+      <img src="assets/app/mushbox/mb (5).jpg" alt="MushBox Mobile Screenshot 5">
+    </div>
+   </div>
+</div>
 
-                <h4>Project Duration</h4>
-                <p id="modal-duration"></p>
+<div id="cryptoSteganoModal" class="modal">
+  <div class="modal-content">
+    <span class="close-button">&times;</span>
+    <h2>Cryptography & Steganography Tools</h2>
+    <div class="modal-gallery">
+      <p>Preview & Apk: <a href="https://drive.google.com/drive/folders/1pDw3z_bUkDQOhtTPZjrash0qC8hP6Ixj" target="_blank">Drive Link</a></p>
+  
+      <p>Cryptography and Steganography Tools adalah aplikasi mobile yang dirancang untuk menyembunyikan dan mengenkripsi pesan dalam gambar menggunakan teknik kriptografi dan steganografi. Aplikasi ini dibangun menggunakan Android Studio dengan bahasa Java, mendukung fitur enkripsi cipher dan metode LSB untuk penyisipan pesan ke dalam gambar.</p>
+      <img src="assets/app/jarkom/jk (1).jpg" alt="Crypto Stegano Screenshot 1">
+      <img src="assets/app/jarkom/jk (2).jpg" alt="Crypto Stegano Screenshot 2">
+      <img src="assets/app/jarkom/jk (3).jpg" alt="Crypto Stegano Screenshot 3">
+      <img src="assets/app/jarkom/jk (4).jpg" alt="Crypto Stegano Screenshot 4">
+      
+    </div>
+    </div>
+</div>
 
-                <h4>Project Links</h4>
-                <div class="modal-links" id="modal-links"></div>
-
-                <h4>Project Screenshots</h4>
-                <div class="modal-screenshots" id="modal-screenshots"></div>
-              </div>
-            </div>
-          </div>
-        </div>
 
         <!-- SERTIFIKAT -->
         <article class="certificates" data-page="certificates">
@@ -819,6 +886,119 @@ Melalui program Merdeka Belajar Kampus Merdeka (MBKM), saya memperdalam keteramp
   });
 </script>
 
+
+<!-- Basic Modal Script -->
+<script>
+document.querySelectorAll('[data-modal-target]').forEach(el => {
+  el.addEventListener('click', function(e) {
+    e.preventDefault();
+    const modal = document.querySelector(this.getAttribute('data-modal-target'));
+    modal.style.display = 'block';
+  });
+});
+document.querySelectorAll('.close-button').forEach(el => {
+  el.addEventListener('click', function() {
+    this.closest('.modal').style.display = 'none';
+  });
+});
+window.addEventListener('click', function(e) {
+  document.querySelectorAll('.modal').forEach(modal => {
+    if (e.target === modal) modal.style.display = 'none';
+  });
+});
+</script>
+
+<!-- Modal Style -->
+<style>
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.modal-content {
+  background-color: #2d2d2d;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+}
+.close-button {
+  float: right;
+  font-size: 1.5em;
+  font-weight: bold;
+  cursor: pointer;
+}
+</style>
+
+
+<!-- Tambahkan style tambahan -->
+<style>
+.modal-gallery {
+  margin-bottom: 1em;
+}
+.modal-gallery img {
+  width: 100%;
+  max-width: 100%;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  // Modal handler
+  document.querySelectorAll('[data-modal-target]').forEach(el => {
+    el.addEventListener('click', function(e) {
+      e.preventDefault();
+      const modal = document.querySelector(this.getAttribute('data-modal-target'));
+      modal.style.display = 'block';
+    });
+  });
+  document.querySelectorAll('.close-button').forEach(el => {
+    el.addEventListener('click', function() {
+      this.closest('.modal').style.display = 'none';
+    });
+  });
+  window.addEventListener('click', function(e) {
+    document.querySelectorAll('.modal').forEach(modal => {
+      if (e.target === modal) modal.style.display = 'none';
+    });
+  });
+
+  // Tampilkan semua project saat pertama kali dimuat
+  const allProjects = document.querySelectorAll('.project-item');
+  allProjects.forEach(item => item.style.display = 'block');
+
+  // Filter handler
+  const filterButtons = document.querySelectorAll('[data-filter-btn]');
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const selectedCategory = button.textContent.trim().toLowerCase();
+
+      // Update active class
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+
+      allProjects.forEach(project => {
+        const category = project.getAttribute('data-category').toLowerCase();
+        if (selectedCategory === 'all' || category === selectedCategory) {
+          project.style.display = 'block';
+        } else {
+          project.style.display = 'none';
+        }
+      });
+    });
+  });
+});
+</script>
 
 
 <span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span></body></html>
